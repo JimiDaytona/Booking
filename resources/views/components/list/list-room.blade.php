@@ -3,11 +3,18 @@
     <lu>
         @foreach($rooms as $room)
             <li>
-                <p>{{ $room -> name }}</p>
-                <p>{{ $room -> img }}</p>
-                <p>{{ $room -> price }}</p>
-                <p>{{ $room -> person }}</p>
+                <ul>
+                    <li>{{ $room -> id }}</li>
+                    <li>{{ $room -> name }}</li>
+                    <li>{{ $room -> img }}</li>
+                    <li>{{ $room -> price }}</li>
+                    <li>{{ $room -> person }}</li>
+                    <li> <a href="{{ route('deleteRoom', $room->id) }}">DeleteRoom</a> </li>
+                </ul>
             </li>
         @endforeach
     </lu>
+
+    <a href="/addRoomView">Add Room</a>
+
 </div>

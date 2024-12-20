@@ -1,18 +1,17 @@
 <div class="room_cont">
 
-{{--    @if(session('success'))--}}
-{{--        <div class="alert alert-success">--}}
-{{--            {{ session('success') }}--}}
-{{--        </div>--}}
-{{--    @endif--}}
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
 
-{{--    @if(session('fail'))--}}
-{{--        <div class="alert alert-fail">--}}
-{{--            {{ session('fail') }}--}}
-{{--        </div>--}}
-{{--    @endif--}}
-{{--        --}}
-        <x-succes-and-faile />
+    @if(session('fail'))
+        <div class="alert alert-fail">
+            {{ session('fail') }}
+        </div>
+    @endif
+
 
     <div class="name">
         <p> {{ $room->name }}</p>

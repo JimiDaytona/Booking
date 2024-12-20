@@ -18,6 +18,9 @@ class Room extends Model
         return $this->hasOne(Reservation::class);
     }
 
+    public $timestamps = false;
+
+    protected $fillable = ['name', 'img', 'price', 'description', 'person'];
     public static function searchRoom($dateIn, $dateOut, $person = 1, $price = null)
     {
         return DB::table('rooms')

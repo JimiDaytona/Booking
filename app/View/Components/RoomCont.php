@@ -7,16 +7,14 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use App\Models\Room;
 
-class roomCont extends Component
+class RoomCont extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct(
-        public $room,
-        public $id
-    )
+    private $room;
+    private $id;
+    public function __construct($room, $id)
     {
+        $this->room = $room;
+        $this->id = $id;
     }
 
     /**
@@ -24,6 +22,6 @@ class roomCont extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.room-cont');
+        return view('room-cont', compact(['room', 'id']));
     }
 }

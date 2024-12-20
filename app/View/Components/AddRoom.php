@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class SuccessAndFail extends Component
+class AddRoom extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class SuccessAndFail extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.success-and-fail');
+        return view('components.add-room');
     }
 }

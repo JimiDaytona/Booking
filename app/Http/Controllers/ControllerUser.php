@@ -70,4 +70,11 @@ class ControllerUser extends Controller
         return redirect()->back()->with('success', 'The changes have been accepted');
     }
 
+    public function DeleteUser($id)
+    {
+        User::find($id)->delete();
+        return redirect(route('admin-room'));
+
+    }
+
 }

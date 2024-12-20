@@ -22,6 +22,7 @@ class Reservation extends Model
         'person',
     ];
 
+    public $timestamps = false;
     public static function scopeOverlapping($dateIn, $dateOut, $room_id)
     {
         return Reservation::where('room_id', $room_id)

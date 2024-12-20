@@ -9,8 +9,6 @@
 </head>
 <body>
 
-<x-success-and-fail />
-
 <h1>Admin Panel</h1>
 
 <div class="main">
@@ -49,7 +47,6 @@
     editDisplay('button_user', 'list_user');
     editDisplay('button_room', 'list_room');
     editDisplay('button_booking', 'list_booking');
-    editDisplay('edit_user', 'form_edit_user');
 
 </script>
 

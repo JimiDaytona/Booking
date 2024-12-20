@@ -5,6 +5,7 @@ use App\Http\Controllers\ControllerUser;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ControllerReservations;
 use App\Http\Middleware\AdminCheck;
+use App\Http\Controllers\ControllerRoom;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +22,14 @@ Route::get('/auth', function () {
 });
 Route::get('/register', function () {
     return view('register');
+});
+
+Route::controller(ControllerRoom::class)->group(function () {
+    Route::post('/addRoom', 'addRoom')->name('room.add');
+    Route::get('/addRoomView', function () {
+        return view('components.add-room');
+    });
+    Route::get('/deleteRoom/{id}', 'deleteRoom')->name('deleteRoom');
 });
 
 Route::controller(Controller::class)->group(function () {
