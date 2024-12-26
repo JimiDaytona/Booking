@@ -1,0 +1,587 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/*text*/
+
+/* Общие настройки */
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    font-size: 16px; /* Базовый размер шрифта */
+    line-height: 1.6; /* Оптимальное межстрочное расстояние */
+    color: #333; /* Основной цвет текста */
+    background-color: #f8f9fa; /* Лёгкий фон для всего сайта */
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #222; /* Чуть темнее цвет для заголовков */
+    line-height: 1.4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Параграфы */
+p {
+    margin: 10px 0;
+    color: #555; /* Лёгкий оттенок серого для текста */
+}
+
+/* Ссылки */
+a {
+    color: #007BFF; /* Синий цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Более тёмный синий при наведении */
+    text-decoration: underline;
+}
+
+/* Списки */
+ul, ol {
+    margin: 10px 0 20px 20px;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Блоки цитат */
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    color: #555;
+    font-style: italic;
+}
+
+/* Формы */
+input, textarea, select {
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Кнопки */
+button {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*img*/
+
+/* Общие стили для всех изображений */
+img {
+    max-width: 100%; /* Изображение не будет превышать ширину своего контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+    display: block; /* Убирает пробелы под изображением */
+    border-radius: 5px; /* Лёгкое закругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для придания глубины */
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимация на наведение */
+}
+
+/* Стили при наведении на изображение */
+img:hover {
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
+}
+
+/* Стили для изображений с классом .rounded */
+img.rounded {
+    border-radius: 50%; /* Круглые изображения, например, аватары */
+}
+
+/* Стили для изображений в карусели или галерее */
+img.gallery {
+    border: 2px solid #ddd; /* Граница для разделения изображений */
+    padding: 5px;
+    margin: 10px;
+    background-color: #f8f8f8;
+}
+
+/* Адаптивные изображения */
+@media (max-width: 768px) {
+    img {
+        border-radius: 3px; /* Уменьшение закругления углов на маленьких экранах */
+    }
+}
+
+/* Form */
+
+.box_search form {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_search form p {
+    margin:  0 0 0;
+}
+
+.box_search form input {
+    margin: 0 10px 0 10px;
+}
+
+.box_search form input {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.box_search form input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.box_search form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.box_search form input:disabled {
+    background-color: #f9f9f9;
+    border-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.box_rooms {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+}
+
+.box_room img {
+    width: 80%;
+}
+
+/*Cont_room*/
+
+/* Общий контейнер */
+.room_cont {
+    max-width: 800px; /* Ограничение ширины */
+    margin: 20px auto; /* Центрирование по горизонтали */
+    padding: 20px;
+    background-color: #fff; /* Белый фон */
+    border-radius: 10px; /* Скруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для объёмности */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    color: #333;
+}
+
+/* Сообщения об успехе и ошибке */
+.alert {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-fail {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Название */
+.room_cont .name h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* Изображение */
+.room_cont .img img {
+    width: 100%; /* Адаптивная ширина */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+    margin-bottom: 20px;
+}
+
+/* Описание */
+.room_cont .desk p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Ссылка "Назад" */
+.room_cont a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.room_cont a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Форма (если используется компонент <x-form>) */
+.room_cont form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room_cont form input, .room_cont form button {
+    width: calc(100% - 30px);
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.room_cont form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.room_cont form button:hover {
+    background-color: #0056b3;
+}
+
+/*header*/
+
+/* Основной стиль для header */
+header {
+    display: flex; /* Горизонтальная ориентация элементов */
+    justify-content: space-between; /* Пространство между логотипом и меню */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 15px 30px; /* Внутренние отступы */
+    background-color: #007BFF; /* Фон хедера */
+    color: #fff; /* Цвет текста */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Логотип */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Меню */
+header menu {
+    margin: 0;
+    padding: 0;
+}
+
+header menu ul {
+    display: flex; /* Горизонтальное меню */
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0;
+    padding: 0;
+}
+
+header menu ul li {
+    margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+header menu ul li a {
+    color: #fff; /* Белый текст ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px; /* Закругление ссылок */
+    transition: background-color 0.3s, color 0.3s; /* Анимация на наведение */
+}
+
+header menu ul li a:hover {
+    background-color: #0056b3; /* Фон при наведении */
+    color: #f0f0f0; /* Лёгкий оттенок текста */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Вертикальная ориентация */
+        align-items: flex-start; /* Выравнивание по левому краю */
+    }
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    header menu ul {
+        flex-direction: column; /* Меню становится вертикальным */
+    }
+
+    header menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*my-room*/
+
+/* Общий стиль для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Лёгкий серый фон */
+}
+
+/* Уведомления об успехе */
+.alert {
+    padding: 15px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Заголовок */
+.box-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.box-title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Контейнер для бронирований */
+.box-book {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Карточка комнаты */
+.box-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-room p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.box-room a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007BFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box-room a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Ссылки */
+.box-room a:first-child {
+    margin-right: 10px;
+}
+
+.box-room a:last-child {
+    background-color: #dc3545; /* Красный фон для кнопки удаления */
+    color: #fff;
+}
+
+.box-room a:last-child:hover {
+    background-color: #c82333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .box-room {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box-room p {
+        margin-bottom: 10px;
+    }
+
+    .box-room a {
+        width: 100%; /* Ссылки растягиваются на всю ширину */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .box-room a:last-child {
+        margin-bottom: 0;
+    }
+}
+
+

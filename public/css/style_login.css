@@ -1,0 +1,177 @@
+/*login*/
+
+/* Общий стиль для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Лёгкий фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Высота на весь экран */
+}
+
+/* Контейнер для формы */
+form {
+    background-color: #fff; /* Белый фон */
+    border-radius: 10px; /* Скругленные углы */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень */
+    width: 100%;
+    max-width: 400px; /* Ограничение по ширине */
+    box-sizing: border-box;
+}
+
+/* Заголовок формы */
+form p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333; /* Тёмно-серый текст */
+}
+
+/* Поля ввода */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Растягиваем поля на всю ширину */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Светлая рамка */
+    border-radius: 5px; /* Закругленные углы */
+    outline: none; /* Убираем стандартный контур */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* При фокусе на поле ввода */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007BFF; /* Синий цвет для фокуса */
+}
+
+/* Кнопка отправки */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF; /* Синий фон */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Эффект при наведении на кнопку */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Тёмно-синий фон */
+}
+
+/* Сообщения об ошибках */
+.alert {
+    background-color: #f8d7da; /* Красный фон */
+    color: #721c24; /* Тёмно-красный текст */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.alert ul li {
+    margin-bottom: 10px;
+}/*login*/
+
+/* Общий стиль для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Лёгкий фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Высота на весь экран */
+}
+
+/* Контейнер для формы */
+form {
+    background-color: #fff; /* Белый фон */
+    border-radius: 10px; /* Скругленные углы */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень */
+    width: 100%;
+    max-width: 400px; /* Ограничение по ширине */
+    box-sizing: border-box;
+}
+
+/* Заголовок формы */
+form p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333; /* Тёмно-серый текст */
+}
+
+/* Поля ввода */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Растягиваем поля на всю ширину */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Светлая рамка */
+    border-radius: 5px; /* Закругленные углы */
+    outline: none; /* Убираем стандартный контур */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* При фокусе на поле ввода */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007BFF; /* Синий цвет для фокуса */
+}
+
+/* Кнопка отправки */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF; /* Синий фон */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Эффект при наведении на кнопку */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Тёмно-синий фон */
+}
+
+/* Сообщения об ошибках */
+.alert {
+    background-color: #f8d7da; /* Красный фон */
+    color: #721c24; /* Тёмно-красный текст */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.alert ul li {
+    margin-bottom: 10px;
+}

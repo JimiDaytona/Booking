@@ -14,7 +14,9 @@
 
 
     <div class="name">
-        <p> {{ $room->name }}</p>
+        <h2>
+            Name: {{ $room->name }}
+        </h2>
     </div>
 
     <div class="img">
@@ -23,7 +25,7 @@
 
     <div class="desk">
         <p>
-            {{ $room->description }}
+            Description: {{ $room->description }}
         </p>
     </div>
         @auth()
@@ -32,3 +34,5 @@
     <a href="/layout/all">Назад</a>
 
 </div>
+
+

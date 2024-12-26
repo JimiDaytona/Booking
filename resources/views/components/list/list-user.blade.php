@@ -7,7 +7,6 @@
                     <p>{{ $user -> id }}</p>
                     <p>{{ $user -> name }}</p>
                     <p>{{ $user -> email }}</p>
-                    <p><a href="route('')"></a></p>
                 </li>
 
 

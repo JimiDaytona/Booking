@@ -22,6 +22,8 @@ class RoomCont extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('room-cont', compact(['room', 'id']));
+        return view('components.room-cont', [
+            'room' => $this->room,
+            'id' => $this->id]);
     }
 }
